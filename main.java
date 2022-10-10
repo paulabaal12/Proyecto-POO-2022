@@ -16,4 +16,16 @@ public class main {
     public static void main(String[] args) {
         vista VistaUser = new vista();
         Scanner sc= new Scanner(System.in);
-    }}
+        int opcion = 0;
+    }
+        while (opcion != 4) {
+            opcion = 0;
+
+             VistaUser.Menu_principal();
+            opcion = sc.nextInt();
+
+            if (opcion == 1) {
+                System.out.println("prueba");
+
+    }}}
+
