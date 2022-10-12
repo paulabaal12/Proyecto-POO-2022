@@ -1,3 +1,14 @@
+/******************************************************************
+Proyecto POO
+Autores: 
+    Ana Paula Navas #22731
+    Sergio Palacios #22808
+    Paula Rebeca Barillas #22764
+
+Última modificación: 9/10/2022
+ 
+Driver program/clase sobre Idioma Español, la cuál va a heredar otras 
+******************************************************************/
 public class IdiomaEsp {
     String vocales;
     String consonantes;
