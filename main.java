@@ -18,8 +18,9 @@ public class main {
         Scanner sc= new Scanner(System.in);
         int opcion = 0;
     }
+    {
         while (opcion != 4) {
-            opcion = 0;
+            int opcion = 0;
 
             VistaUser.Menu_principal();
             opcion = sc.nextInt();
@@ -28,4 +29,5 @@ public class main {
                 System.out.println("prueba");
 
     }}}
+
 
