@@ -21,7 +21,7 @@ public class main {
         while (opcion != 4) {
             opcion = 0;
 
-             VistaUser.Menu_principal();
+            VistaUser.Menu_principal();
             opcion = sc.nextInt();
 
             if (opcion == 1) {
