@@ -18,6 +18,7 @@ public class main {
         Scanner sc= new Scanner(System.in);
         int opcion = 0;
     }
+    private int opcion;
     {
         while (opcion != 4) {
             int opcion = 0;
