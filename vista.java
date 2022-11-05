@@ -9,7 +9,7 @@ Autores:
  
 Driver program/clase sobre las funciones de la vista del programa 
 ******************************************************************/
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class vista {
     Scanner scan = new Scanner(System.in); 

@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+
 
 /******************************************************************
 Proyecto POO
@@ -11,10 +11,11 @@ Autores:
  
 Driver program/clase sobre las funciones del controlador del sistema = controlador del programa
 ******************************************************************/ 
+import javax.swing.JOptionPane;
+
 public class controlador {
+    String menu = JOptionPane.showInputDialog("n\nEscoge una materia. n\n1. Matemáticas n\n2. Idioma español n\n3. Brindar/buscar ayuda n\n4. Salida\n\n");
+
     
-    public void Welcome(){
-        JOptionPane.showMessageDialog(null, "Bienvenide a Learning is fun!", "Bienvenida",1);
-}
 
 }
