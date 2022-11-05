@@ -9,16 +9,16 @@ Autores:
  
 Driver program/clase sobre las funciones de la vista del programa 
 ******************************************************************/
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class vista {
     Scanner scan = new Scanner(System.in); 
 
-/******************************************************************
-   * 
-   * Menú inicial 
-   * 
-   ******************************************************************/
+  /*public void Welcome(){
+    JOptionPane.showMessageDialog(null, "Bienvenide a Learning is fun!");
+  }/* */
 
+//Menú inicial
   public void Menu_principal() {
     System.out.println("\n\nEscoge una materia :) ");
     System.out.println("1. Matemáticas");
@@ -26,11 +26,8 @@ public class vista {
     System.out.println("3. Brindar/buscar ayuda ");
     System.out.println("4. Salida\n\n");
  }
-/******************************************************************
-   * 
-   * Menú para opción de matemáticas
-   * 
-   ******************************************************************/
+//Menú para opción de matemáticas
+
  public void Menu_mate() {
     System.out.println("\n\nQue opción te gustaría aprender/reforzar");
     System.out.println("1. Sumas básicas");
@@ -40,11 +37,8 @@ public class vista {
     System.out.println("5. Escritura de números");
     System.out.println("6. Exit\n\n");
   } 
-  /******************************************************************
-   * 
-   * Menú para opción de Idioma Español 
-   * 
-   ******************************************************************/
+  //Menú para opción de Idioma Español 
+
  public void Menu_idioma() {
     System.out.println("\n\nQue opción te gustaría aprender/reforzar");
     System.out.println("1. Vocales");

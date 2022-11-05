@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         vista VistaUser = new vista();
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int opcion = 0;
     }
     private int opcion;
@@ -24,7 +24,7 @@ public class main {
             int opcion = 0;
 
             VistaUser.Menu_principal();
-            opcion = sc.nextInt();
+            //opcion = sc.nextInt();
 
             if (opcion == 1) {
                 System.out.println("prueba");
