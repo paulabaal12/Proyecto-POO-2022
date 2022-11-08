@@ -6,9 +6,9 @@ Autores:
     Sergio Palacios #22808
     Paula Rebeca Barillas #22764
 
-Última modificación: 9/10/2022
+Última modificación: 7/11/2022
  
-Driver program/clase sobre Idioma Español, la cuál va a heredar otras 
+Driver program/clase 
 ******************************************************************/
 public class Language {
 
