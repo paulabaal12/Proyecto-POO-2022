@@ -21,7 +21,7 @@ public class Interaction {
   }/* */
 
     public void welcome() {
-    	System.out.println("Bienvenido a ...<Agregar algo aqui>");
+    	System.out.println("Bienvenido a reforzar tu educación!!");
     }
     
     public void end_sys() {
@@ -67,7 +67,7 @@ public class Interaction {
  
  	public Users register() {
  		String name = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
- 		String password = JOptionPane.showInputDialog("Ingrese su contrasenia");
+ 		String password = JOptionPane.showInputDialog("Ingrese su contraseña");
  		return new Users(name, password);
  	}
  	/**
