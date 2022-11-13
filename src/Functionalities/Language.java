@@ -20,6 +20,7 @@ public class Language {
 	String[] vocales = {"a","e","i","o","u"};
 	String[] consonantes = {"b","c","d","f","g","h","j","k","l","m","n","ñ","p","q","r","s","t","v","w","x","y","z"};
 	String[] ABC = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z"};
+	int option = 0; 
 	public void lengua(){
 	do {
 		option = Integer.parseInt(JOptionPane.showInputDialog(
@@ -34,6 +35,7 @@ public class Language {
 		switch (option) {
 			case 1:
 			//Vocales
+
 				break;
 			case 2:
 			//Consonantes
@@ -54,7 +56,7 @@ public class Language {
 				break;
 		}
 
-	} while (option != 5);
+	} while (option != 6);
 
 }
 }

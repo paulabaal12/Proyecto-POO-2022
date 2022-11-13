@@ -12,6 +12,7 @@ Driver program/clase sobre las funciones del controlador del sistema = controlad
 ******************************************************************/
 
 
+import Functionalities.Language;
 import Functionalities.Mate;
 import LogIn.LogIn;
 import LogIn.Users;
@@ -20,7 +21,8 @@ public class Controller {
 	private Users currentUser = null;
 	private Interaction view = new Interaction();
 	private LogIn logIn = new LogIn();
-	private Mate mate = new Mate();
+	private Mate mate = new Mate();	
+	private Language lengua = new Language();
 
 	public void start() {
 		boolean registered = false;
@@ -71,7 +73,7 @@ public class Controller {
 					mate.mate();
 					break;
 				case 2:
-					// Idioma Español
+					lengua.lengua(); 
 					break;
 				case 3:
 					// Brindar/buscar Ayuda
