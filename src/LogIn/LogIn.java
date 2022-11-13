@@ -1,14 +1,3 @@
-/******************************************************************
-Proyecto POO
-Autores: 
-    Ana Paula Navas #22731
-    Sergio Palacios #22808
-    Paula Rebeca Barillas #22764
-
-Última modificación: 7/11/2022
- 
-Driver program/clase 
-******************************************************************/
 package LogIn;
 
 import java.util.ArrayList;
@@ -52,3 +41,4 @@ public class LogIn {
 		}
 	}
 }
+
