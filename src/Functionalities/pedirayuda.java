@@ -52,6 +52,7 @@ public class pedirayuda {
                     System.out.println("DPI: ");
                     String dpi = sc.nextLine();
                     register.setDPI(dpi);
+                    System.out.println("Gracias, has sido registrado...");
 
                      break;
 
@@ -59,10 +60,12 @@ public class pedirayuda {
                 System.out.println("Bienvenid@, Por favor cuéntanos a continuación en que te podemos ayudar: \n");
                 String data = sc.nextLine();
                 register.setData(data);
+                System.out.println("Pronto te ayudaremos...");
 
                 System.out.println("Coméntanos que piensas sobre nuestro servicio: \n");
                 String opinion = sc.nextLine();
                 register.setOpinion(opinion);
+                System.out.println("Gracias por tu opinión...");
                      break;
                 
                 case 3:
@@ -78,6 +81,7 @@ public class pedirayuda {
                 System.out.println("¿Tienes algun comentario o opinon sobre las contribuciones? Dejanos saber a continuación: ");
                 String coments = sc.nextLine();
                 register.setComentario(coments);
+                System.out.println("Gracias por tu comentario...");
                      break;
 
                 case 5:
