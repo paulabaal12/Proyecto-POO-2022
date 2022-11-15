@@ -7,18 +7,19 @@ import DataStore.OpenFiles;
 public class LogIn {
 	private OpenFiles files = new OpenFiles();
 	private ArrayList<ArrayList<String>> data = null;
+	private final String rutaUsers = "src\\DataStore\\Archivos\\Users.csv";
 	
 	
 	public void register(Users userData) {
-		data = files.leer_CSV();
+		data = files.leer_CSV(rutaUsers);
 		ArrayList<String> newUser = new ArrayList<String>();
 		newUser.add(userData.getUser());
 		newUser.add(userData.getPassword());
-		files.save_data(newUser);
+		files.save_data(newUser, rutaUsers);
 	}
 	
 	public void showUsers() {
-		data = files.leer_CSV();
+		data = files.leer_CSV(rutaUsers);
 		for(ArrayList<String> user: data) {
 			ArrayList<String> tempData = user;
 			for(int i = 0; i < tempData.size();i++) {
@@ -28,7 +29,7 @@ public class LogIn {
 	}
 	
 	public boolean iniciarSesion(Users user) {
-		data = files.leer_CSV();
+		data = files.leer_CSV(rutaUsers);
 		ArrayList<String> users = new ArrayList<String>();
 		for(ArrayList<String> currentUser: data) {
 			users.add(currentUser.get(0));
