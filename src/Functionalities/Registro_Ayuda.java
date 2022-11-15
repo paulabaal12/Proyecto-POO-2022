@@ -1,5 +1,7 @@
 package Functionalities;
 
+import java.util.Scanner;
+
 public class Registro_Ayuda {
     private String Nombre;
     private String Apellido;
@@ -8,6 +10,7 @@ public class Registro_Ayuda {
     private String Data;
     private String Opinion;
     private String Comentario;
+    //Scanner sc = new Scanner();
     
     
     public String getComentario() {

@@ -49,7 +49,7 @@ public class Language {
 				"Menu Lenguaje\n"
 						+ "1. Vocales\n"
 						+ "2. Consonantes \n"
-						+ "3. Abecedario Completo \n"
+						+ "3. Mostrar Abecedario Completo \n"
 						+ "4. Ejemplos de la palabra seleccionada \n"
 						+ "5. Escritura de palabras, ,manera correcta \n"
 						+ "6. Salir \n"));
@@ -59,42 +59,42 @@ public class Language {
 			//Vocales
 				pre1 = (JOptionPane.showInputDialog("¿Cuál de las siguientes palabras tienen más vocales con la letra a?\n" 
 				+ "(a)Avión \n(b)Jaguar\n(c)Periodista\n(d)Manzana\n"));
-				if (pre1 == "") {
+				if (pre1.equals("d") ){
 					JOptionPane.showMessageDialog(null, "Correcto");
 				} else {
 					JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la d");
 					}
 				pre2 = (JOptionPane.showInputDialog("¿Cuál de las siguientes palabras tienen más vocales con la letra e?\n" 
 				+ "(a)Murcielago \n(b)Celeste\n(c)Carne\n(d)Estrella\n"));
-				if (pre2 == "b") {
+				if (pre2.equals("b")) {
 					JOptionPane.showMessageDialog(null, "Correcto");
 				} else {
 					JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la b");
 						}
 				pre3 = (JOptionPane.showInputDialog("¿Cuál de las siguientes palabras tienen más vocales con la letra i?\n" 
 				+ "(a)Iglú \n(b)Isopo\n(c)Infinito\n(d)Incendio\n"));
-				if (pre3 == "c") {
+				if (pre3.equals("c")) {
 					JOptionPane.showMessageDialog(null, "Correcto");
 				} else {
 					JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la c");
 					}
 				pre4 = (JOptionPane.showInputDialog("¿Cuál de las siguientes palabras tienen más vocales con la letra o?\n" 
 				+ "(a)Oreja \n(b)Olla\n(c)Ordenador\n(d)Oruga\n"));
-				if (pre4 == "c") {
+				if (pre4.equals("c")) {
 						JOptionPane.showMessageDialog(null, "Correcto");
 				} else {
 						JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la c");
 					}
 				pre5 = (JOptionPane.showInputDialog("¿Cuál de las siguientes palabras tienen más vocales con la letra U?\n" 
 				+ "(a)Universidad \n(b)Uno\n(c)Urgencia\n(d)Uruguay\n"));
-				if (pre5 == "d") {
+				if (pre5.equals("d")) {
 						JOptionPane.showMessageDialog(null, "Correcto");
 				} else {
 						JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la d");
 					}
 				pre6 = (JOptionPane.showInputDialog("¿Cuál de las siguientes palabras tienen más vocales\n" 
 				+ "(a)Sexagesimocuarto \n(b)Murcielago\n(c)Abecedario\n(d)Gaseosa\n"));
-				if (pre6 == "a") {
+				if (pre6.equals("a")) {
 						JOptionPane.showMessageDialog(null, "Correcto");
 				} else {
 						JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la a");
@@ -104,42 +104,42 @@ public class Language {
 			//Consonantes
 			pre7 = (JOptionPane.showInputDialog("¿Cuantas consonantes tiene la siguiente palabra:Adscribir? \n" 
 				+ "(a)6 \n(b)3\n(c)5\n(d)7\n"));
-				if (pre7 == "a") {
+				if (pre7.equals("a")) {
 						JOptionPane.showMessageDialog(null, "Correcto");
 				} else {
 						JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la a");
 					}
 			pre8 = (JOptionPane.showInputDialog("¿Cuantas consonantes tiene la siguiente palabra:Monstruo? \n" 
 					+ "(a)10 \n(b)3\n(c)5\n(d)6\n"));
-					if (pre8 == "c") {
+					if (pre8.equals("c")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la c");
 						}
 			pre9 = (JOptionPane.showInputDialog("¿Cuantas consonantes tiene la siguiente palabra:Transgredir? \n" 
 					+ "(a)8 \n(b)7\n(c)9\n(d)6\n"));
-					if (pre9 == "c") {
+					if (pre9.equals("c")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la b");
 						}
 			pre10 = (JOptionPane.showInputDialog("¿Cuantas consonantes tiene la siguiente palabra:Combinaciones? \n" 
 					+ "(a)9 \n(b)7\n(c)3\n(d)6\n"));
-					if (pre10 == "b") {
+					if (pre10.equals("b")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la b");
 							}
 			pre11 = (JOptionPane.showInputDialog("¿Cuantas consonantes tiene la siguiente palabra:Carrera? \n" 
 					+ "(a)2 \n(b)7\n(c)3\n(d)4\n"));
-					if (pre11 == "d") {
+					if (pre11.equals("d")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la d");
 							}
 			pre12 = (JOptionPane.showInputDialog("¿Cuantas consonantes tiene la siguiente palabra:Obstrucción? \n" 
 				    + "(a)12 \n(b)7\n(c)8\n(d)4\n"));
-					if (pre12 == "b") {
+					if (pre12.equals("b")) {
 					       JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es la b");
@@ -156,59 +156,59 @@ public class Language {
 			case 4:
 			//Ejemplos de la palabra seleccionada
 			pre13 = (JOptionPane.showInputDialog("De las letras del ABC, escribe que palabra te gustaría tener un ejemplo"));
-					if (pre13 == "a") {
+					if (pre13.equals("a")) {
 					       JOptionPane.showMessageDialog(null, "araña, año, arco, alambre, almidón");
-					if (pre13 == "b") {
+					if (pre13.equals("b")) {
 							JOptionPane.showMessageDialog(null, "burro, barro, banco, barón, blanco");
-					if (pre13 == "c") {
+					if (pre13.equals("c")) {
 							JOptionPane.showMessageDialog(null, "carro, camión, casa, celeste, cantar");
-					if (pre13 == "d") {
+					if (pre13.equals("d")) {
 					        JOptionPane.showMessageDialog(null, "dado, delfín, dinosaurio, dardo, diez");
-					if (pre13 == "e") {
+					if (pre13.equals("e")) {
 							JOptionPane.showMessageDialog(null, "elefante, estribo, estaca, España, escoba");
-					if (pre13 == "f") {
+					if (pre13.equals("f")) {
 							JOptionPane.showMessageDialog(null, "Francia, fósforo, faraón, felino, fantasma");
-					if (pre13 == "g") {
+					if (pre13.equals("g")) {
 							JOptionPane.showMessageDialog(null, "gato, gimnasia, gris, ganso, gancho");
-					if (pre13 == "h") {
+					if (pre13.equals("h")) {
 							JOptionPane.showMessageDialog(null, "hilo, helio, huevo, harina, hormiga");
-					if (pre13 == "i") {
+					if (pre13.equals("i")) {
 							JOptionPane.showMessageDialog(null, "iglesia, institución, invitación, interno, isla");
-					if (pre13 == "j") {
+					if (pre13.equals("j")) {
 							JOptionPane.showMessageDialog(null, "jaula, Jamaica, jarrón, juntar, jinete");
-					if (pre13 == "k") {
+					if (pre13.equals("k")) {
 							JOptionPane.showMessageDialog(null, "koala, kiosco, karma, kerosene, kilo");
-					if (pre13 == "l") {
+					if (pre13.equals("l")) {
 							JOptionPane.showMessageDialog(null, "ladrar, ladrón, lagarto, lila, largo");
-					if (pre13 == "m") {
+					if (pre13.equals("m")) {
 						    JOptionPane.showMessageDialog(null, "mano, malo, manso, marrón, millón");
-					if (pre13 == "n") {
+					if (pre13.equals("n")) {
 							 JOptionPane.showMessageDialog(null, "naranja, negro, ninguno, nube, nariz");
-					if (pre13 == "ñ") {
+					if (pre13.equals("ñ")) {
 							JOptionPane.showMessageDialog(null, "ñuzco, ñu, ñudoso, ñacunda, ñanduti");
-					if (pre13 == "o") {
+					if (pre13.equals("o")) {
 							JOptionPane.showMessageDialog(null, "obrero, orfebrería, oso, oscuro, octavo");
-					if (pre13 == "p") {
+					if (pre13.equals("p")) {
 							JOptionPane.showMessageDialog(null, "púrpura, pera, piso, pantalla, pulso");
-					if (pre13 == "q") {
+					if (pre13.equals("q")) {
 							JOptionPane.showMessageDialog(null, "querer, quemar, quedar, queso");
-					if (pre13 == "r") {
+					if (pre13.equals("r")) {
 							JOptionPane.showMessageDialog(null, "ratón, rosa, rama, rito, rodar");
-					if (pre13 == "s") {
+					if (pre13.equals("s")) {
 							JOptionPane.showMessageDialog(null, "salmón, saltar, soltar, silbar, sol");
-					if (pre13 == "t") {
+					if (pre13.equals("t")) {
 							JOptionPane.showMessageDialog(null, "tirar, tratar, timar, tocar, tomar");
-					if (pre13 == "u") {
+					if (pre13.equals("u")) {
 						     JOptionPane.showMessageDialog(null, "uva, uña, ultra, unir, único");
-					if (pre13 == "v") {
+					if (pre13.equals("v")) {
 							JOptionPane.showMessageDialog(null, "velar, vela, volver, ver, vigilar");
-				    if (pre13 == "w") {
+				    if (pre13.equals("w")) {
 							JOptionPane.showMessageDialog(null, "Washington, watts, waffle, whisky, walkman.");
-					if (pre13 == "x") {
+					if (pre13.equals("x")) {
 							JOptionPane.showMessageDialog(null, "xilófono, xenofobia, xilografía, xiloprotector, xerófito");
-					if (pre13 == "y") {
+					if (pre13.equals("y")) {
 							JOptionPane.showMessageDialog(null, "Yodo, yoyo, yacía, yaga, yegua");
-					if (pre13 == "z") {
+					if (pre13.equals("z")) {
 							JOptionPane.showMessageDialog(null, "zapato, zapatilla, zorro, zarza, zarpa");
 
 					} else {
@@ -225,49 +225,49 @@ public class Language {
 			case 5:
 			//Escritura de palabras, ,manera correcta
 			pre13 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente: saaditm \n" ));
-			if (pre13 == "amistad") {
+			if (pre13.equals("amistad")) {
 					JOptionPane.showMessageDialog(null, "Correcto");
 			} else {
 					JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es amistad");
 				}
 			pre14 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente: mddhiual\n"));
-					if (pre14 == "humildad") {
+					if (pre14.equals("humildad")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es humildad");
 						}
 			pre15 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente:anormdcióe \n"));
-					if (pre15 == "moderación") {
+					if (pre15.equals("moderación")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es moderación");
 						}
 			pre16 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente: bnidesdalisi \n" ));
-					if (pre16 == "sensibilidad") {
+					if (pre16.equals("sensibilidad")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es sensibilidad");
 							}
 			pre17 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente: cairnedup \n" ));
-					if (pre17 == "prudencia") {
+					if (pre17.equals("prudencia")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es prudencia");
 							}
 			pre18 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente: dasogneerdi\n" ));
-					if (pre18 == "generosidad") {
+					if (pre18.equals("generosidad")) {
 						JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es generosidad");
 							}
 			pre19 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente:ttirgdua \n" ));
-					if (pre19 == "gratitud") {
+					if (pre19.equals("gratitud")) {
 							JOptionPane.showMessageDialog(null, "Correcto");
 					} else {
 							JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta gratitud");
 									}
 			pre20 = (JOptionPane.showInputDialog("Escribe correctamente lo siguiente:paecniaci\n"));
-					if (pre20 == "paciencia") {
+					if (pre20.equals("paciencia")) {
 						JOptionPane.showMessageDialog(null, "Correcto");
 					  } else {
 						JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es paciencia");

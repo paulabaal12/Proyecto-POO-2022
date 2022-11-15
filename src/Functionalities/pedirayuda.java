@@ -20,7 +20,8 @@ import java.util.ArrayList;
 
 public class pedirayuda {
     int option = 0; 
-    Scanner sc = new Scanner();
+    String pre;
+    //Scanner sc = new Scanner();
     Registro_Ayuda regist = new Registro_Ayuda();
     public void ayuda(){
         do {
@@ -34,8 +35,8 @@ public class pedirayuda {
     
             switch (option) {
                 case 1:
-                    String register = sc.nextLine();
-                    System.out.println("---Bienvenido Por favor ingresa tus datos---");
+                    //String register = sc.nextLine();
+                    pre =  (JOptionPane.showInputDialog("---Bienvenido Por favor ingresa tus datos---"));
                     
                     System.out.println("Nombre: ");
                     String nombre = sc.nextLine();
