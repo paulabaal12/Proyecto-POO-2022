@@ -1,14 +1,4 @@
-/******************************************************************
-Proyecto POO
-Autores: 
-    Ana Paula Navas #22731
-    Sergio Palacios #22808
-    Paula Rebeca Barillas #22764
 
-Última modificación: 7/11/2022
- 
-Driver program/clase 
-******************************************************************/
 //import javax.swing.JOptionPane;
 
 import javax.swing.JOptionPane;
@@ -16,9 +6,9 @@ import javax.swing.JOptionPane;
 import LogIn.Users;
 public class Interaction { 
 
-  /*public void Welcome(){
+  public void Welcome(){
     JOptionPane.showMessageDialog(null, "Bienvenido a Learning is fun!");
-  }/* */
+  }
 
     public void welcome() {
     	System.out.println("Bienvenido a reforzar tu educación!!");
