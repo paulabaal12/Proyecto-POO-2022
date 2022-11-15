@@ -9,7 +9,6 @@ public class LogIn {
 	private ArrayList<ArrayList<String>> data = null;
 	private final String rutaUsers = "src\\DataStore\\Archivos\\Users.csv";
 	
-	
 	public void register(Users userData) {
 		data = files.leer_CSV(rutaUsers);
 		ArrayList<String> newUser = new ArrayList<String>();

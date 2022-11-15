@@ -1,18 +1,15 @@
 package Functionalities;
 
-import java.util.Scanner;
-
 public class Registro_Ayuda {
     private String Nombre;
     private String Apellido;
-    private String Profesion;
+    private String Profesion;    
     private int Numero_tele;
     private int DPI;
     private String Data;
     private String Opinion;
     private String Comentario;
-    
-    
+            
     public String getComentario() {
         return Comentario;
     }
@@ -43,12 +40,6 @@ public class Registro_Ayuda {
     public void setApellido(String apellido) {
         Apellido = apellido;
     }
-    public String getProfesion() {
-        return Profesion;
-    }
-    public void setProfesion(String profesion) {
-        Profesion = profesion;
-    }
     public int getNumero_tele() {
         return Numero_tele;
     }
@@ -60,8 +51,13 @@ public class Registro_Ayuda {
     }
     public void setDPI(int dPI) {
         DPI = dPI;
+    }            
+
+    public String getProfesion() {
+        return Profesion;
     }
-    
-    
-    
+
+    public void setProfesion(String profesion) {
+        Profesion = profesion;
+    }
 }

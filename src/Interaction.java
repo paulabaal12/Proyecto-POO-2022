@@ -57,7 +57,7 @@ public class Interaction {
  * Menú para opción de Idioma Español
  */
  	public int Menu_idioma() {
-		String[] options = {"Vocales", "Consonantes","Abecedario Completo","Ejemplos de la palabra seleccionada","Escritura de palabras correctas","Exit"};
+		String[] options = {"Vocales", "Consonantes","Mostrar Abecedario Completo","Ejemplos de la palabra seleccionada","Escritura de palabras correctas","Exit"};
 	    System.out.println("\n\nQue opción te gustaría aprender/reforzar");
 	    for(int i = 0; i < options.length; i++) {
 	    	System.out.println((i+1) + ". " + options[i]);

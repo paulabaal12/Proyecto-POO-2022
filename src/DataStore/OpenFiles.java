@@ -10,9 +10,16 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
+import java.io.Writer;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.OutputStreamWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
 public class OpenFiles {
 	
-	 public ArrayList<ArrayList<String>> leer_CSV() {
+	 public ArrayList<ArrayList<String>> leer_CSV(String ruta) {
 	        // StringBuilder sb = new StringBuilder();
 	        ArrayList<ArrayList<String>> usuarios =  new ArrayList<ArrayList<String>>();
 
@@ -23,8 +30,6 @@ public class OpenFiles {
 	            String linea;
 	            // Lectura linea por linea del archivo.
 	            while ((linea = br.readLine()) != null) {
-	                // Para la lectura de caracteres
-	                // sb.append(linea).append("\n");
 	                String[] datosDeLinea = linea.split(",");
 	                ArrayList<String> datos_temporal = new ArrayList<String>();
 	                for (String dato : datosDeLinea) {
@@ -41,13 +46,13 @@ public class OpenFiles {
 	 /**
 	  * 
 	  */
-	 public void save_data(ArrayList<String> saveData) {
+	 public void save_data(ArrayList<String> saveData, String ruta) {
 		 File archivo;
         try {
             // Modificar la ruta del arhcivo a la ruta donde se ubica actualmente
-            archivo = new File("src\\DataStore\\Archivos\\Users.csv");
+            archivo = new File(ruta);
             if (archivo.exists()) {
-                BufferedWriter bw = new BufferedWriter(new FileWriter("src\\DataStore\\Archivos\\Users.csv", true));
+                BufferedWriter bw = new BufferedWriter(new FileWriter(ruta, true));
                 // bw.write(titulos + "\n");
                 for (int i = 0; i < saveData.size(); i++) {
                     int maximo = saveData.size() - 1;
@@ -65,9 +70,25 @@ public class OpenFiles {
             }
         } catch (IOException exception) {
             System.err.println("NO SE PUDO HACER NADA PARA ALMACENAR EN EL ARCHIVO");
-        }
-		 
+        }		 
 	 }
+
+	 public void agregar_nueva_linea(String linea, String ruta){
+		OutputStream os = null;
+		try {
+			os = new FileOutputStream(new File(ruta), true);
+			os.write(linea.getBytes(), 0, linea.length());
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				os.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	 }
+	 
 	 /**
 	  * 
 	  * @param nombre_archivo

@@ -14,7 +14,7 @@ Driver program/clase sobre las funciones del controlador del sistema = controlad
 
 import Functionalities.Language;
 import Functionalities.Mate;
-import Functionalities.pedirayuda;
+import Functionalities.PedirAyuda;
 import LogIn.LogIn;
 import LogIn.Users;
 
@@ -24,7 +24,7 @@ public class Controller {
 	private LogIn logIn = new LogIn();
 	private Mate mate = new Mate();	
 	private Language lengua = new Language();
-	private pedirayuda ayuda = new pedirayuda(); 
+	private PedirAyuda ayuda = new PedirAyuda(); 
 
 	public void start() {
 		boolean registered = false;

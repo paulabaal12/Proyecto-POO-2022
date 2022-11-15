@@ -15,10 +15,13 @@ import java.util.stream.*;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
-import java.util.ArrayList;
 import DataStore.OpenFiles;
 
+import java.util.ArrayList;
+
+
 public class PedirAyuda {
+
     private int option;
     private Scanner sc;
     private Registro_Ayuda registro;
@@ -30,7 +33,7 @@ public class PedirAyuda {
         registro = new Registro_Ayuda();
         openFile = new OpenFiles();
     }
-
+    
     public void ayuda(){
         do {
             option = Integer.parseInt(JOptionPane.showInputDialog(
@@ -118,3 +121,4 @@ public class PedirAyuda {
     
     }
 }
+    
