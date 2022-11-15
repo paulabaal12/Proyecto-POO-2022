@@ -46,61 +46,58 @@ public class PedirAyuda {
     
             switch (option) {
                 case 1:
-                    System.out.println("---Bienvenido Por favor ingresa tus datos---");
+                    JOptionPane.showMessageDialog(null, "---Bienvenido, por favor ingresa tus datos---");
                     
-                    System.out.println("Nombre: ");
+                    JOptionPane.showInputDialog("Nombre: ");
                     String nombre = sc.nextLine();
                     registro.setNombre(nombre);
 
-                    System.out.println("Apellido: ");
+                    JOptionPane.showInputDialog("Apellido: ");
                     String apellido = sc.nextLine();
                     registro.setApellido(apellido);
 
-                    System.out.println("Numero de Teléfono: ");
+                    JOptionPane.showInputDialog("Numero de Teléfono: ");
                     int telefono = sc.nextInt();
                     registro.setNumero_tele(telefono);
 
-                    System.out.println("DPI: ");
+                    JOptionPane.showInputDialog("DPI: ");
                     int dpi = sc.nextInt();
                     registro.setDPI(dpi);
                     sc.nextLine();
 
-                    System.out.println("Profesion: ");
+                    JOptionPane.showInputDialog("Profesion: ");
                     String profesion = sc.nextLine();
                     registro.setProfesion(profesion);
 
                     System.out.println();
                     
-                    System.out.println("Gracias, has sido registrado...");
+                    JOptionPane.showMessageDialog(null, "Gracias, has sido registrado...");
 
                      break;
 
                 case 2:
-                    System.out.println("Bienvenid@, Por favor cuéntanos a continuación en que te podemos ayudar: \n");
+                    JOptionPane.showInputDialog("Bienvenid@, Por favor cuéntanos a continuación en que te podemos ayudar: \n");
                     String data = sc.nextLine();
                     registro.setData(data);
-                    System.out.println("Pronto te ayudaremos...");
+                    JOptionPane.showMessageDialog(null, "Pronto te ayudaremos...");
                 
-                    System.out.println("Coméntanos que piensas sobre nuestro servicio: \n");
+                    JOptionPane.showInputDialog("Coméntanos que piensas sobre nuestro servicio: \n");
                     String opinion = sc.nextLine();
                     registro.setOpinion(opinion);
-                    System.out.println("Gracias por tu opinión...");
+                    JOptionPane.showMessageDialog(null, "Gracias por tu opinión...");
                      break;
                 
                 case 3:
-                    System.out.println("Nuestros Centros de educación públicos: ");
-                    System.out.println("1. Centro Principal \nCalzada Roosevelt, Cdad. de Guatemala 01011 \nNumero Telefónico: 2285-4302");
-                    System.out.println("2. Centro Buena Vista \nGuatemala, 13 Calle 8, Guatemala \nNumero Telefónico: 2375-5728");
-                    System.out.println("3. Centro Unidos Por Un mejor Día \nJ2j6+P62, Jalapa\nNumero Telefónico: 7845-4173");
+                    JOptionPane.showMessageDialog(null, "Nuestros Centros de educación públicos: \n1. Centro Principal \nCalzada Roosevelt, Cdad. de Guatemala 01011 \nNumero Telefónico: 2285-4302 \n2. Centro Buena Vista \nGuatemala, 13 Calle 8, Guatemala \nNumero Telefónico: 2375-5728 \n3. Centro Unidos Por Un mejor Día \nJ2j6+P62, Jalapa\nNumero Telefónico: 7845-4173");
                      break;
                 
                 case 4:
-                    System.out.println("---Si deseas contribuir a nuestra organización, te dejamos los datos para que puedas hacerlo, de antemano te agradecemos tu colarboración.---");
-                    System.out.println("Dirección para contribuciones: \n1. Centro Principal \nCalzada Roosevelt, Cdad. de Guatemala 01011 \nNumero Telefónico: 2285-4302 \n2. Centro Unidos Por Un mejor Día \nJ2j6+P62, Jalapa\nNumero Telefónico: 7845-4173");
-                    System.out.println("¿Tienes algun comentario o opinon sobre las contribuciones? Dejanos saber a continuación: ");
+                    JOptionPane.showMessageDialog(null, "---Si deseas contribuir a nuestra organización, te dejamos los datos para que puedas hacerlo, de antemano te agradecemos tu colaboración.---");
+                    JOptionPane.showMessageDialog(null, "Dirección para contribuciones: \n1. Centro Principal \nCalzada Roosevelt, Cdad. de Guatemala 01011 \nNumero Telefónico: 2285-4302 \n2. Centro Unidos Por Un mejor Día \nJ2j6+P62, Jalapa\nNumero Telefónico: 7845-4173");
+                    JOptionPane.showInputDialog("¿Tienes algun comentario o opinon sobre las contribuciones? Dejanos saber a continuación: ");
                     String coments = sc.nextLine();
                     registro.setComentario(coments);
-                    System.out.println("Gracias por tu comentario...");
+                    JOptionPane.showMessageDialog(null, "Gracias por tu comentario...");
                     break;
 
                 case 5:
