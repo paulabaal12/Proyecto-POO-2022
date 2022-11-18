@@ -12,6 +12,8 @@ Driver program/clase sobre las funciones del controlador del sistema = controlad
 ******************************************************************/
 
 
+import javax.swing.JOptionPane;
+
 import Functionalities.Language;
 import Functionalities.Mate;
 import Functionalities.PedirAyuda;
@@ -43,7 +45,7 @@ public class Controller {
 						currentUser = user;
 						menu();
 					} else {
-						System.err.println("DEBE CREAR UN USUARIO");
+						JOptionPane.showInputDialog("DEBE CREAR UN USUARIO");
 						start();
 					}
 					break;

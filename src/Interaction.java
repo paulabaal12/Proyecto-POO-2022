@@ -6,16 +6,12 @@ import javax.swing.JOptionPane;
 import LogIn.Users;
 public class Interaction { 
 
-  public void Welcome(){
-    JOptionPane.showMessageDialog(null, "Bienvenido a Learning is fun!");
-  }
-
     public void welcome() {
-    	System.out.println("Bienvenido a reforzar tu educación!!");
+    	JOptionPane.showMessageDialog(null, "Bienvenido a reforzar tu educación!!");
     }
     
     public void end_sys() {
-    	System.out.println("Saliendo...");
+    	JOptionPane.showMessageDialog(null, "Saliendo...");
     }
   /**
    * Home. This is the main menu of the project
@@ -82,14 +78,14 @@ public class Interaction {
 		boolean next_step = false;
 		do {
 			try {
-				selection = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una de las opciones"));
+				selection = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una de las opciones\n 1. Iniciar sesion\n 2. Registrarse\n 3. Salir"));
 				if(selection < 1 || selection > amountOptions) {
-					System.err.println("DEBE INGRESAR UNA OPCION VALIDA");
+					JOptionPane.showInputDialog("DEBE INGRESAR UNA OPCION VALIDA");
 				}else {
 					next_step = true;
 				}
 			}catch(NumberFormatException e){
-				System.err.println("DEBE INGRESAR UN VALOR NUMERICO");
+				JOptionPane.showInputDialog("DEBE INGRESAR UN VALOR NUMERICO");
 			}
 			
 		}while(!next_step);

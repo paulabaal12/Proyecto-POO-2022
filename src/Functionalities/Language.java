@@ -274,6 +274,7 @@ public class Language {
 									}
 				break;
 			case 6:
+			JOptionPane.showMessageDialog(null, "Vuelve pronto! :)");
 				break;
 		}
 

@@ -208,36 +208,41 @@ public class Mate {
 
                 case 3:
                     option = 3;
-                    menor1 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de menor a mayor, separandolos por un espacio\n 5, 18, 7, 12, 3"));
+                    menor1 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes numeros de menor a mayor, separandolos como el mismo formato\n 5, 18, 7, 12, 3")))
+                            .get(0);
                     if (Data.contains(menor1)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 3 5 7 12 18");
                     }
-                    menor2 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de menor a mayor, separandolos por un espacio\n 6, 15, 2, 10, 21"));
+                    menor2 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes numeros de menor a mayor, separandolos como el mismo formato\n 6, 15, 2, 10, 21")))
+                            .get(0);
                     if (Data2.contains(menor2)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 2 6 10 15 21");
                     }
-                    menor3 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de menor a mayor, separandolos por un espacio\n 9, 17, 4, 27, 22"));
+                    menor3 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes numeros de menor a mayor, separandolos como el mismo formato\n 17, 9, 4, 27, 22")))
+                            .get(0);
                     if (Data3.contains(menor3)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 4 9 17 22 27");
                     }
-                    menor4 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de menor a mayor, separandolos por un espacio\n 16, 30, 24, 13, 38"));
+                    menor4 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes numeros de menor a mayor, separandolos como el mismo formato\n 16, 30, 24, 13, 38")))
+                            .get(0);
                     if (Data4.contains(menor4)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 13 16 24 30 38");
                     }
-                    menor5 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de menor a mayor, separandolos por un espacio\n 18, 35, 27, 5, 21"));
+                    menor5 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes numeros de menor a mayor, separandolos como el mismo formato\n 18, 35, 27, 5, 21")))
+                            .get(0);
                     if (Data5.contains(menor5)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
@@ -247,36 +252,41 @@ public class Mate {
 
                 case 4:
                     option = 4;
-                    mayor1 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de mayor a menor, separandolos por un espacio\n 5, 18, 7, 12, 3"));
+                    mayor1 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes sumeros de mayor a menor, separandolos como el mismo formato\n 5, 18, 7, 12, 3")))
+                            .get(0);
                     if (Data6.contains(mayor1)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 18 12 7 5 3");
                     }
-                    mayor2 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de mayor a menor, separandolos por un espacio\n 6, 15, 2, 10, 21"));
+                    mayor2 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes sumeros de mayor a menor, separandolos como el mismo formato\n 6, 15, 2, 10, 21")))
+                            .get(0);
                     if (Data7.contains(mayor2)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 21 15 10 6 2");
                     }
-                    mayor3 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de mayor a menor, separandolos por un espacio\n 9, 17, 4, 27, 22"));
+                    mayor3 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes sumeros de mayor a menor, separandolos como el mismo formato\n 9, 17, 4, 27, 22")))
+                            .get(0);
                     if (Data8.contains(mayor3)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 27 22 17 9 4");
                     }
-                    mayor4 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de mayor a menor, separandolos por un espacio\n 16, 30, 24, 13, 38"));
+                    mayor4 = StringToList((JOptionPane.showInputDialog(
+                            "Ordena los siguientes sumeros de mayor a menor, separandolos como el mismo formato\n 16, 30, 24, 13, 38")))
+                            .get(0);
                     if (Data9.contains(mayor4)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
                         JOptionPane.showMessageDialog(null, "Incorrecto, la respuesta correcta es 38 30 24 16 13");
                     }
-                    mayor5 = Integer.parseInt(JOptionPane.showInputDialog(
-                            "Ordena los siguientes sumeros de mayor a menor, separandolos por un espacio\n 18, 35, 27, 5, 21"));
+                    mayor5 = StringToList((JOptionPane.showInputDialog(
+                        "Ordena los siguientes sumeros de mayor a menor, separandolos como el mismo formato\n 18, 35, 27, 5, 21")))
+                        .get(0);
                     if (Data10.contains(mayor5)) {
                         JOptionPane.showMessageDialog(null, "Correcto");
                     } else {
@@ -291,5 +301,15 @@ public class Mate {
 
         } while (option != 5);
 
+    }
+    private ArrayList<Integer> StringToList(String text){
+        ArrayList<Integer> list = new ArrayList<>();
+        String[] numbers = text.split(",");
+
+        for (String number : numbers) {
+            list.add(new Integer(number.trim()));
+        }
+
+        return list;
     }
 }

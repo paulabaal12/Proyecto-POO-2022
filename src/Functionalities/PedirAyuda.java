@@ -111,6 +111,7 @@ public class PedirAyuda {
                         + registro.getComentario()
                         ;
                     openFile.agregar_nueva_linea("\n" + linea, "src\\DataStore\\Archivos\\RegistroAyuda.csv");
+                    JOptionPane.showMessageDialog(null, "Vuelve pronto! :)");
                     break;
             }
     
